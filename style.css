@@ -1,0 +1,148 @@
+@import url("https://uilight.netlify.app/main.css");
+
+:root {
+    --primary-color: #1D3C6B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+.product-container {
+    margin-left: 16rem;
+    margin-right: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    gap: 12px;
+}
+
+.fitting {
+    height: 150px;
+}
+
+.fit {
+    object-fit: contain;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.nav-container {
+
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 3px 8px 2px rgba(33, 51, 78, 0.5);
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    height: 80px;
+}
+
+.nav-image {
+    object-fit: contain;
+    height: 110px;
+    width: 110px;
+}
+
+.other-reqs {
+    margin-right: 15px;
+    height: 80px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+}
+
+.other-reqs .material-symbols-outlined {
+    font-size: 34px;
+    color: #1D3C6B;
+    padding: 5px;
+    font-weight: 500;
+}
+
+.search-container {
+    display: flex;
+    align-items: end;
+    gap: 0px;
+    border-bottom: 1.9px solid #1D3C6B;
+}
+
+.search-input {
+    height: 23px;
+    border: none;
+    background-color: #ffffff;
+    margin-left: 3px;
+    flex-grow: 2;
+}
+
+.search-input:focus {
+    border: none;
+    outline: none;
+}
+
+.search-container .material-symbols-outlined {
+    font-size: 20px;
+    color: #1D3C6B;
+}
+
+.Container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cart-items {
+    margin: 50px 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.wishList-items {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-details-container {
+    margin: 50px 20px;
+}
+
+.side-bar {
+    width: 15rem;
+    left: 20px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.radio {
+    width: 1.25rem;
+    height: 1.25rem;
+}

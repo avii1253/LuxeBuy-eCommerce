@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | LuxeBuy</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <meta author="Avinash" use="Ecommerce" description="online shopping app">
+</head>
+
+<body>
+    <header class="nav-container">
+        <div class="logo-container">
+            <a style="text-decoration: none; color: var(--primary-color);font-weight: bolder;font-size: 40px;"
+                href="./index.html">
+                <h2>LuxeBuy</h2>
+            </a>
+        </div>
+        <div class="other-reqs">
+            <div class="search-container">
+                <input class="search-input" placeholder="Search Items">
+                <span data-type="search" class="material-symbols-outlined goSearch cursor">
+                    search
+                </span>
+            </div> <!--Search Container-->
+            <li>
+                <a href="./wishList.html"><span data-type="wishList" class="material-symbols-outlined">
+                        favorite
+                    </span></a>
+            </li>
+            <li>
+                <a href="./cart.html"><span data-type="cart" class="material-symbols-outlined">
+                        shopping_cart
+                    </span></a>
+            </li>
+        </div>
+    </header>
+
+    <div class="d-flex gap justify-center">
+        <aside style="margin-top: 150px;" class="side-bar">
+            <h3>Filter</h3>
+            <div class="rating-filter d-flex direction-column gap">
+                <h3>Ratings</h3>
+                <div class="d-flex align-center gap">
+                    <input data-rating="4" id="4star" class="radio" type="radio" name="rating">
+                    <label data-rating="4" for="4star">4 star & above</label>
+                </div>
+                <div class="d-flex align-center gap">
+                    <input data-rating="3" id="3star" class="radio" type="radio" name="rating">
+                    <label data-rating="3" for="3star">3 star & above</label>
+                </div>
+                <div class="d-flex align-center gap">
+                    <input data-rating="2" id="2star" class="radio" type="radio" name="rating">
+                    <label data-rating="2" for="2star">2 star & above</label>
+                </div>
+                <div class="d-flex align-center gap">
+                    <input data-rating="1" id="1star" class="radio" type="radio" name="rating">
+                    <label data-rating="1" for="1star">1 star & above</label>
+                </div>
+            </div>
+        </aside>
+        <div class="product-container wrap"></div>
+    </div>
+
+    <script type=module src="./index.js"></script>
+</body>
+
+</html>
